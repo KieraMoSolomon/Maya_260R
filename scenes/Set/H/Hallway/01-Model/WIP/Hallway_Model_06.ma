@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Hallway_Model_06.ma
-//Last modified: Tue, Feb 07, 2017 11:57:22 PM
+//Last modified: Tue, Feb 07, 2017 11:58:23 PM
 //Codeset: UTF-8
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "E1F72B38-D14C-414B-9912-6CAAFC1EE8EF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 77.906008197149532 56.769335283455653 -40.956016438762511 ;
+	setAttr ".t" -type "double3" 137.31731640289729 83.634440544591001 -66.665585285761082 ;
 	setAttr ".r" -type "double3" -22.538352729533262 473.39999999991875 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "5F053286-C540-F312-395D-CE9F72CBCBEF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 106.32553162541919;
+	setAttr ".coi" 176.41418515585013;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
