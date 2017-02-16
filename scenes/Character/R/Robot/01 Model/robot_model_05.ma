@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: robot_model_05.ma
-//Last modified: Thu, Feb 16, 2017 12:32:34 PM
+//Last modified: Thu, Feb 16, 2017 12:35:25 PM
 //Codeset: UTF-8
 requires maya "2017";
 currentUnit -l centimeter -a degree -t film;
@@ -13,13 +13,13 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "3C326580-234C-2090-FFEA-F983E771EEE1";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 20.667210993648482 233.1118325564949 176.36750633981796 ;
-	setAttr ".r" -type "double3" -42.93835272992596 1796.1999999994609 0 ;
+	setAttr ".t" -type "double3" 27.325460516856271 223.50909514529317 5.8940207931657511 ;
+	setAttr ".r" -type "double3" -86.138352728480996 2005.3999999992388 0 ;
 createNode camera -s -n "perspShape" -p "persp";
 	rename -uid "03155961-5245-5805-E009-A28F528462EF";
 	setAttr -k off ".v" no;
 	setAttr ".fl" 34.999999999999986;
-	setAttr ".coi" 221.57475860476009;
+	setAttr ".coi" 141.65806312824284;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
@@ -1313,13 +1313,13 @@ createNode mesh -n "pPlaneShape1" -p "pPlane1";
 	setAttr -k off ".v";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
-	setAttr ".pv" -type "double2" 0.5 1 ;
+	setAttr ".pv" -type "double2" 1 0.5 ;
 	setAttr ".uvst[0].uvsn" -type "string" "map1";
 	setAttr ".cuvs" -type "string" "map1";
 	setAttr ".dcc" -type "string" "Ambient+Diffuse";
 	setAttr ".covm[0]"  0 1 1;
 	setAttr ".cdvm[0]"  0 1 1;
-	setAttr -s 9 ".pt";
+	setAttr -s 11 ".pt";
 	setAttr ".pt[51]" -type "float3" 0 2.0861626e-07 0 ;
 	setAttr ".pt[52]" -type "float3" 0 2.9802322e-08 0 ;
 	setAttr ".pt[79]" -type "float3" 0 8.9406967e-08 0 ;
