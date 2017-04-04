@@ -1,6 +1,6 @@
 //Maya ASCII 2017 scene
 //Name: Robot_UV_007.ma
-//Last modified: Tue, Apr 04, 2017 12:16:22 AM
+//Last modified: Tue, Apr 04, 2017 12:16:59 AM
 //Codeset: UTF-8
 requires maya "2017";
 requires -nodeType "gameFbxExporter" "gameFbxExporter" "1.0";
@@ -1350,6 +1350,7 @@ createNode mesh -n "Hip_GeoShape" -p "Hip_Geo";
 	rename -uid "4DCEA01D-4D80-ED4B-70B3-E8B92F6F6166";
 	addAttr -ci true -sn "nts" -ln "notes" -dt "string";
 	setAttr -k off ".v";
+	setAttr ".iog[0].og[4].gcl" -type "componentList" 1 "f[240:383]";
 	setAttr ".vir" yes;
 	setAttr ".vif" yes;
 	setAttr ".pv" -type "double2" 0.41994951665401459 0.86113011837005615 ;
@@ -65836,6 +65837,9 @@ createNode nodeGraphEditorInfo -n "hyperShadePrimaryNodeEditorSavedTabsInfo1";
 	setAttr ".tgi[0].ni[11].x" -1085.7142333984375;
 	setAttr ".tgi[0].ni[11].y" 173.33334350585938;
 	setAttr ".tgi[0].ni[11].nvs" 1923;
+createNode groupId -n "groupId175";
+	rename -uid "A694AAD4-AF4F-EFA3-18CA-26AC5DB481B9";
+	setAttr ".ihi" 0;
 select -ne :time1;
 	setAttr ".o" 3;
 	setAttr ".unw" 3;
@@ -65867,7 +65871,11 @@ select -ne :defaultResolution;
 select -ne :hardwareRenderGlobals;
 	setAttr ".ctrs" 256;
 	setAttr ".btrs" 512;
+select -ne :modelPanel4ViewSelectedSet;
+	setAttr ".ihi" 0;
 connectAttr "Geo_Layer.di" "Geometry.do";
+connectAttr "groupId175.id" "Hip_GeoShape.iog.og[4].gid";
+connectAttr ":modelPanel4ViewSelectedSet.mwc" "Hip_GeoShape.iog.og[4].gco";
 relationship "link" ":lightLinker1" ":initialShadingGroup.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" ":initialParticleSE.message" ":defaultLightSet.message";
 relationship "link" ":lightLinker1" "uv_shaderSG.message" ":defaultLightSet.message";
