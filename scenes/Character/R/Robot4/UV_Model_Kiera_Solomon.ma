@@ -1,6 +1,6 @@
 //Maya ASCII 2017ff04 scene
 //Name: UV_Model_Kiera_Solomon.ma
-//Last modified: Fri, Apr 21, 2017 11:26:30 PM
+//Last modified: Fri, Apr 21, 2017 11:57:17 PM
 //Codeset: UTF-8
 requires maya "2017ff04";
 requires "stereoCamera" "10.0";
@@ -15,8 +15,8 @@ fileInfo "license" "student";
 createNode transform -s -n "persp";
 	rename -uid "A1E8E213-4954-39AC-9244-DBA74BE438DF";
 	setAttr ".v" no;
-	setAttr ".t" -type "double3" 27.191833260418083 88.283093026279374 882.44219510641972 ;
-	setAttr ".r" -type "double3" 3.0000000000006795 -1440.3999999999974 -1.5530430621222724e-18 ;
+	setAttr ".t" -type "double3" 39.625134331031745 87.180574901097913 579.87516695735371 ;
+	setAttr ".r" -type "double3" 0 -1441.5999999999988 0 ;
 	setAttr ".rp" -type "double3" -2.7755575615628914e-17 -6.6613381477509392e-16 0 ;
 	setAttr ".rpt" -type "double3" -7.2406915407477417e-13 -2.654303433975627e-13 1.3462233265667964e-13 ;
 createNode camera -s -n "perspShape" -p "persp";
@@ -24,7 +24,7 @@ createNode camera -s -n "perspShape" -p "persp";
 	setAttr -k off ".v" no;
 	setAttr ".pze" yes;
 	setAttr ".fl" 34.999999999999979;
-	setAttr ".coi" 548.42334509225532;
+	setAttr ".coi" 246.6413898190369;
 	setAttr ".imn" -type "string" "persp";
 	setAttr ".den" -type "string" "persp_depth";
 	setAttr ".man" -type "string" "persp_mask";
